@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>BLOG</title>
+    <title>blog 心得</title>
     <link href="/2024/07/11/text/"/>
     <url>/2024/07/11/text/</url>
     
-    <content type="html"><![CDATA[<p>欢迎来我的blog做客~   blog刚刚才搭载优化好，还没有文章QAQ…后续我会更新的。<br>把我的所学知识记录在上面并且分享给有需要的人！<br>你是第一个看我博客的人哦</p>]]></content>
+    <content type="html"><![CDATA[<p>欢迎来我的blog做客~<br>blog刚刚才搭载优化好，还没有文章QAQ…后续我会更新的。<br>把我的所学知识记录在上面并且分享给有需要的人！<br>之前在服务器上搭的，后续不想再买阿里了，就本地搭个博客吧。<br>网上hexo框架在github上搭博客，教程蛮多的，可以搜着看看<br>搭的过程中坎坎坷坷，也是自己知识的欠缺，后面猛补QAQ</p><p>1.安装git和 node.js时候目录文件夹纯英文呀<br>2.输入指令的时候会经常出现权限不足的情况，命令提示符管理员身份打开，CD进博客的那个目录再继续执行指令<br>3多用搜索引擎，多请教<br>4为知识付费，没什么不好的  ORZ</p>]]></content>
     
     
     
