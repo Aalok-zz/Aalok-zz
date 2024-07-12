@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>docker studys</title>
+    <link href="/2024/07/12/docker%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2024/07/12/docker%E7%9A%84%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<h3 id="基于阿里云服务器CentOS-操作系统-linux操作系统"><a href="#基于阿里云服务器CentOS-操作系统-linux操作系统" class="headerlink" title="基于阿里云服务器CentOS 操作系统,linux操作系统"></a>基于阿里云服务器CentOS 操作系统,linux操作系统</h3><p>首先Xshell连接一下服务器，这里我就不演示了</p><h4 id="安装docker指令"><a href="#安装docker指令" class="headerlink" title="安装docker指令"></a>安装docker指令</h4><p>1.yum 包更新到最新</p><p>yum update</p><p>2.安装需要的软件包</p><p>yum install -y yum-utils device-mapper-persistent-data lvm2</p><p>3.设置yum源</p><p>yum-config-manager –add-repo <a href="https://download.docker.com/linux/centos/docker-ce.repo">https://download.docker.com/linux/centos/docker-ce.repo</a></p><p>4.安装docker,出现输入的界面都按y</p><p>yum install -y docker-ce</p><p>5.查看docker的版本，并且检查更新</p><p>docker -v</p><h3 id="docker架构"><a href="#docker架构" class="headerlink" title="docker架构"></a>docker架构</h3><p><img src="C:\Users\赵壮\AppData\Roaming\marktext\images\2024-07-12-19-09-45-image.png"></p><p>docker的镜像加速器，每个人都有独特地址，自己阿里云服务器上去找</p><h3 id="docker服务相关命令"><a href="#docker服务相关命令" class="headerlink" title="docker服务相关命令"></a>docker服务相关命令</h3><p>1.启动docker服务</p><p>systemctl start docker</p><p>2.停止</p><p>systemctl stop docker</p><p>3.重启</p><p>systemctl restart docker</p><p>4.查看状态</p><p>systemctl status docker</p><p>5.开机自启</p><p>systemctl enable docker</p><h3 id="docker镜像相关命令"><a href="#docker镜像相关命令" class="headerlink" title="docker镜像相关命令"></a>docker镜像相关命令</h3><p>1.查看镜像</p><p>docker images</p><p>2.搜索</p><p>docker search …(…替换到你需要下载的镜像）</p><p>3.拉取</p><p>docker pull …(…替换你的镜像)</p><p>4.删除</p><p>docker rmi …(…替换镜像ID)</p><h3 id="docker容器相关命令"><a href="#docker容器相关命令" class="headerlink" title="docker容器相关命令"></a>docker容器相关命令</h3><p>1.查看容器</p><p> docker ps -a</p><p>2.创建</p><p>docker run -it –name&#x3D;（名字）根据镜像名称：版本</p><p>docker run -it –name&#x3D;c1 centos:7 &#x2F;bin&#x2F;bash (举个例子)</p><p>3.进入</p><p>docker exec -it c1 &#x2F;bin&#x2F;bash</p><p>4.启动</p><p>docker start c1</p><p>5.停止</p><p>docker stop c1</p><p>6.删除</p><p>docker rm c1</p><p>docker rm ‘docker ps -aq’(删除所有容器，启动的容器不能删除)</p><p>7.查看容器信息</p><p>docker inspect c1</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>blog 心得</title>
     <link href="/2024/07/11/text/"/>
     <url>/2024/07/11/text/</url>
